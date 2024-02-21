@@ -25,6 +25,13 @@ class ViewController: UIViewController {
         /// will force app to crash when a certain condition is not met
         /// only happen when debugging and aren't carried to production
         assert(myReallySlowMethod() == true, "The slow method returned false, which is a bad thing!")
+        
+        ///breakpoints
+        ///per line - (fn + F^)
+        ///continue (until you hit another breakpoint) - (Ctrl + Cmnd + Y)
+        for i in 1...100 {
+            print("Got number \(i)")
+        }
     }
     
     func myReallySlowMethod()->Bool{
