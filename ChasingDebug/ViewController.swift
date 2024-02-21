@@ -19,6 +19,16 @@ class ViewController: UIViewController {
         ///separator - provide string that should be placed btw every item in the print() call
         ///terminator - what should be placed after the end item (default is \n)
         print(1,2,3,4,5, separator: "-", terminator: "\n")
+        
+        /// using assertions
+        /// running your code in strict mode
+        /// will force app to crash when a certain condition is not met
+        /// only happen when debugging and aren't carried to production
+        assert(myReallySlowMethod() == true, "The slow method returned false, which is a bad thing!")
+    }
+    
+    func myReallySlowMethod()->Bool{
+        return true
     }
 
 
